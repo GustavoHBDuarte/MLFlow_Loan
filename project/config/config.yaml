@@ -9,3 +9,9 @@ train_dataset_name: 'train.csv'
 
 
 test_dataset_name: 'test.csv'
+
+random_state: 42
+
+target_variable: 'target'
+
+test_size: 0.33
