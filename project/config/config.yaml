@@ -4,6 +4,10 @@ columns_to_use: ['target', 'TaxaDeUtilizacaoDeLinhasNaoGarantidas', 'Idade',
                  'NumeroDeVezes90DiasAtraso', 'NumeroDeEmprestimosOuLinhasImobiliarias',
                  'NumeroDeVezes60-89DiasAtrasoNaoPior', 'NumeroDeDependentes']
 
+variables_imputer: ['RendaMensal','NumeroDeDependentes']
+
+
+variables_discretiser: ['TaxaDeUtilizacaoDeLinhasNaoGarantidas','TaxaDeEndividamento','RendaMensal']
 
 train_dataset_name: 'train.csv' 
 
