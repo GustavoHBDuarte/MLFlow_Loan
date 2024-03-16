@@ -20,8 +20,12 @@ def load_config_file():
     
     return config_file
 
+
+
 def get_model_path(model_name):
     """
+    Essa função get_model_path() tem como objetivo retornar o path que será utilizado como destino para salvar o artefato
+    do modelo treinado.
     """
     diretorio_atual = os.path.dirname(os.path.abspath(__file__))
 
