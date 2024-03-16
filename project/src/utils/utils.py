@@ -19,3 +19,16 @@ def load_config_file():
     config_file = yaml.safe_load(open(config_file_path, 'rb'))
     
     return config_file
+
+def get_model_path(model_name):
+    """
+    """
+    diretorio_atual = os.path.dirname(os.path.abspath(__file__))
+
+    caminho_relativo = os.path.join('..','..','models')
+
+    config_file_path = os.path.abspath(os.path.join(diretorio_atual, caminho_relativo))
+
+    final_model_path = config_file_path+'/'+model_name
+
+    return final_model_path
