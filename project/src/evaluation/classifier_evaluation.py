@@ -67,7 +67,7 @@ class ModelEvaluating:
     
 
     staticmethod
-    def evaluate_predictions(y_true, y_predict_proba):
+    def evaluate_predictions(self, y_true, y_predict_proba):
         """
         Método definido para cálculo do ROC AUC à partir de uma lista de y e y_proba fornecidos.
         """
