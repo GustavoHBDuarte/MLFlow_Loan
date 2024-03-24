@@ -25,3 +25,21 @@ model_name: 'Logistic_Regression'
 stratified_k_folder_n_splits: 5
 
 cross_val_scoring_metric: 'roc_auc'
+
+
+# MLFlow MetricThreshold() parameters
+
+metric_to_evaluate: 'precision_score' # accuracy_score, recall_score, f1_score, roc_auc, precision_recall_auc
+
+metric_threshold: 0.5
+
+metric_min_absolute_change: 0.05
+
+metric_min_relative_change: 0.05
+
+greater_is_better: True
+
+
+# MLFlow mlflow.evaluate() parameters
+
+model_type: 'classifier'
