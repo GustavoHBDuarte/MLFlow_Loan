@@ -7,6 +7,19 @@ columns_to_use: ['target', 'TaxaDeUtilizacaoDeLinhasNaoGarantidas', 'Idade',
 variables_imputer: ['RendaMensal','NumeroDeDependentes']
 
 
+data_types: {'target':pd.Int64Dtype(),
+            'TaxaDeUtilizacaoDeLinhasNaoGarantidas':pd.Float64Dtype(),
+            'Idade':pd.Int64Dtype(),
+            'NumeroDeVezes30-59DiasAtrasoNaoPior':pd.Int64Dtype(),
+            'TaxaDeEndividamento':pd.Float64Dtype(),
+            'RendaMensal':pd.Float64Dtype(),
+            'NumeroDeLinhasDeCreditoEEmprestimosAbertos':pd.Int64Dtype(),
+            'NumeroDeVezes90DiasAtraso':pd.Int64Dtype(),
+            'NumeroDeEmprestimosOuLinhasImobiliarias':pd.Int64Dtype(),
+            'NumeroDeVezes60-89DiasAtrasoNaoPior':pd.Int64Dtype(),
+            'NumeroDeDependentes':pd.Int64Dtype()}
+
+
 variables_discretiser: ['TaxaDeUtilizacaoDeLinhasNaoGarantidas','TaxaDeEndividamento','RendaMensal']
 
 train_dataset_name: 'train.csv' 
