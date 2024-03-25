@@ -43,17 +43,17 @@ class DataLoad:
             # Loading csv as dataframe
             df_loaded_data = pd.read_csv(f'../data/raw/{dataset}',
                                          index_col=[0],
-                                         dtype={'target':pd.Int64Dtype(),
-                                                'TaxaDeUtilizacaoDeLinhasNaoGarantidas':pd.Float64Dtype(),
-                                                'Idade':pd.Int64Dtype(),
-                                                'NumeroDeVezes30-59DiasAtrasoNaoPior':pd.Int64Dtype(),
-                                                'TaxaDeEndividamento':pd.Float64Dtype(),
-                                                'RendaMensal':pd.Float64Dtype(),
-                                                'NumeroDeLinhasDeCreditoEEmprestimosAbertos':pd.Int64Dtype(),
-                                                'NumeroDeVezes90DiasAtraso':pd.Int64Dtype(),
-                                                'NumeroDeEmprestimosOuLinhasImobiliarias':pd.Int64Dtype(),
-                                                'NumeroDeVezes60-89DiasAtrasoNaoPior':pd.Int64Dtype(),
-                                                'NumeroDeDependentes':pd.Int64Dtype()})
+                                         dtype={'target': eval(yaml_file['data_types']['target']),
+                                                'TaxaDeUtilizacaoDeLinhasNaoGarantidas': eval(yaml_file['data_types']['TaxaDeUtilizacaoDeLinhasNaoGarantidas']),
+                                                'Idade': eval(yaml_file['data_types']['Idade']),
+                                                'NumeroDeVezes30-59DiasAtrasoNaoPior': eval(yaml_file['data_types']['NumeroDeVezes30-59DiasAtrasoNaoPior']),
+                                                'TaxaDeEndividamento': eval(yaml_file['data_types']['TaxaDeEndividamento']),
+                                                'RendaMensal': eval(yaml_file['data_types']['RendaMensal']),
+                                                'NumeroDeLinhasDeCreditoEEmprestimosAbertos': eval(yaml_file['data_types']['NumeroDeLinhasDeCreditoEEmprestimosAbertos']),
+                                                'NumeroDeVezes90DiasAtraso': eval(yaml_file['data_types']['NumeroDeVezes90DiasAtraso']),
+                                                'NumeroDeEmprestimosOuLinhasImobiliarias': eval(yaml_file['data_types']['NumeroDeEmprestimosOuLinhasImobiliarias']),
+                                                'NumeroDeVezes60-89DiasAtrasoNaoPior': eval(yaml_file['data_types']['NumeroDeVezes60-89DiasAtrasoNaoPior']),
+                                                'NumeroDeDependentes': eval(yaml_file['data_types']['NumeroDeDependentes'])})
 
             logger.info('Data loaded successfully!')
             
