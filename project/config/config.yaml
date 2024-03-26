@@ -42,6 +42,8 @@ cross_val_scoring_metric: 'roc_auc'
 
 # MLFlow parameters
 
+tracking_uri: "http://127.0.0.1:5000/"
+
 experiment_name: 'prob_loan_exp'
 
 
